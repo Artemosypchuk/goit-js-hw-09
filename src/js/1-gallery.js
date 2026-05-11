@@ -1,4 +1,4 @@
-import SimpleLightbox from "simplelightbox";
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm.js";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 
@@ -89,7 +89,7 @@ function createGalleryHtml(data) {
 galleryContainer.innerHTML = createGalleryHtml(images);
 
 
-const lightbox = new SimpleLightbox.default('.gallery a', {
+const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
